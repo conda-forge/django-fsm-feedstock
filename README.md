@@ -14,14 +14,15 @@ django-fsm adds simple declarative states management for django models.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/django-fsm-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-fsm-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/django-fsm-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/django-fsm-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/django-fsm-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/django-fsm-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/django-fsm-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/django-fsm-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-fsm/badges/version.svg)](https://anaconda.org/conda-forge/django-fsm)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-fsm/badges/downloads.svg)](https://anaconda.org/conda-forge/django-fsm)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-django--fsm-green.svg)](https://anaconda.org/conda-forge/django-fsm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/django-fsm.svg)](https://anaconda.org/conda-forge/django-fsm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/django-fsm.svg)](https://anaconda.org/conda-forge/django-fsm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/django-fsm.svg)](https://anaconda.org/conda-forge/django-fsm) |
 
 Installing django-fsm
 =====================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
