@@ -1,6 +1,6 @@
 {% set name = "django-fsm" %}
-{% set version = "2.6.0" %}
-{% set sha256 = "13da2fbec4284dcf2235157c299306f67b788bd39126bed3cdbcc6a8f17575e9" %}
+{% set version = "2.7.0" %}
+{% set sha256 = "9f42111814a273cdfd79cdf839f3596bc48b9cfe5fe5102293f07ade5b0048d5" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
