@@ -5,9 +5,13 @@ Home: http://github.com/kmmbvnr/django-fsm
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-fsm-feedstock/blob/master/LICENSE.txt)
 
 Summary: Django friendly finite state machine support
+
+Development: http://github.com/kmmbvnr/django-fsm
+
+Documentation: http://github.com/kmmbvnr/django-fsm
 
 django-fsm adds simple declarative states management for django models.
 
