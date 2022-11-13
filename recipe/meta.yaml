@@ -1,29 +1,35 @@
 {% set name = "django-fsm" %}
-{% set version = "2.7.0" %}
-{% set sha256 = "9f42111814a273cdfd79cdf839f3596bc48b9cfe5fe5102293f07ade5b0048d5" %}
+{% set version = "2.8.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-fsm-{{ version }}.tar.gz
+  sha256: fd9f8de9f33188e50f876ce53908fbd7289e5031a44ffdb97d43909e56699ef8
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
+    - python >3.7,<3.11
     - pip
-    - python
     - setuptools
   run:
-    - python
-    - django >=1.8
+    - python >3.7,<3.11
+    - django >=1.6
+
+test:
+  imports:
+    - django_fsm
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://github.com/kmmbvnr/django-fsm
@@ -38,4 +44,5 @@ about:
 extra:
   recipe-maintainers:
     - cshaley
+    - rxm7706
     - sannykr
