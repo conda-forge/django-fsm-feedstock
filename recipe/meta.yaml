@@ -1,5 +1,5 @@
 {% set name = "django-fsm" %}
-{% set version = "2.8.1" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-fsm-{{ version }}.tar.gz
-  sha256: fd9f8de9f33188e50f876ce53908fbd7289e5031a44ffdb97d43909e56699ef8
+  sha256: 0112bcac573ad14051cf8ebe73bf296b6d5409f093e5f1677eb16e2196e263b3
 
 build:
   noarch: python
@@ -35,9 +35,9 @@ about:
   home: http://github.com/kmmbvnr/django-fsm
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE' 
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: 'Django friendly finite state machine support'
-  description: django-fsm adds simple declarative states management for django models.   
+  description: django-fsm adds simple declarative states management for django models.
   doc_url: http://github.com/kmmbvnr/django-fsm
   dev_url: http://github.com/kmmbvnr/django-fsm
 
