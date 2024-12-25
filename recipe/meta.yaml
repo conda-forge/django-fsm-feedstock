@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-fsm-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django-fsm-{{ version }}.tar.gz
   sha256: 0112bcac573ad14051cf8ebe73bf296b6d5409f093e5f1677eb16e2196e263b3
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7,<3.11
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.7,<3.11
+    - python >={{ python_min }},<3.11
     - django >=1.6
 
 test:
@@ -30,6 +30,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://github.com/kmmbvnr/django-fsm
