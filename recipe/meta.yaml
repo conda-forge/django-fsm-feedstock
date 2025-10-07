@@ -1,5 +1,5 @@
 {% set name = "django-fsm" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django-fsm-{{ version }}.tar.gz
-  sha256: 0112bcac573ad14051cf8ebe73bf296b6d5409f093e5f1677eb16e2196e263b3
+  sha256: d6436f5931e09d76e9a434781548627deab80c74cd6726adce95b31b5ddd4d1e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
